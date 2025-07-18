@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DEPORTE ACTIVO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="/tienda_deportiva/scrip.js"></script>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/tienda_deportiva/img/logo.png" alt="Logo" class="logo-icon" />
+      <div class="logo-text">
+        <h1>DEPORTE ACTIVO</h1>
+        <p>Viste tu energía. Vive en movimiento.</p>
+      </div>
+    </div>
+
+    <div class="audio-controls">
+      <audio id="backgroundMusic" autoplay loop>
+        <source src="/tienda_deportiva/musica/audiofonde.mp3" type="audio/mp3" />
+        Tu navegador no soporta audio.
+      </audio>
+      <button id="playBtn">▶ Reanudar</button>
+      <button id="pauseBtn">⏸ Pausar</button>
+    </div>
+  </header>
+
+  <section class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide">
+        <img src="/tienda_deportiva/img/banner.png" alt="Banner 1" />
+      </div>
+
+      <div class="carousel-slide video-slide">
+        <video src="/tienda_deportiva/video/video_promocional.mp4" loop playsinline controls></video>
+      </div>
+      <button id="activarSonido" class="sonido-btn">🔊 Activar sonido</button>
+
+    </div>
+
+    <button class="carousel-btn prev" id="prevBtn">❮</button>
+    <button class="carousel-btn next" id="nextBtn">❯</button>
+  </section>
+
+  <h2>Nuestra Tabla de Precios</h2>
+  <div class="comparativa">
+    <table>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <td>Camiseta Deportiva</td>
+        <td>$25</td>
+      </tr>
+      <tr>
+        <td>Pantalones Cortos</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>$70</td>
+      </tr>
+    </table>
+  </div>
+
+
+  <section id="productos">
+    <h2>Nuestros productos</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="/tienda_deportiva/img/image0.png" />
+        <h3>🏃‍♀️ Conjunto Deportivo Rosa y Negro</h3>
+        <p>
+          <strong>Estilo y comodidad en movimiento.</strong><br />
+          Suéter rosa vibrante con pantalones negros de corte atlético y rayas
+          blancas laterales. Perfecto para entrenamientos ligeros o un look
+          casual con actitud deportiva.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="/tienda_deportiva/img/image1.png" />
+        <h3>🔵 Conjunto FRAKSPORT Negro con Azul</h3>
+        <p>
+          <strong>Diseño dinámico para alto rendimiento.</strong><br />
+          Sudadera y pantalones negros con detalles en azul y blanco.
+          Funcionalidad y estilo para tus rutinas de ejercicio.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="/tienda_deportiva/img/image2.png" />
+        <h3>🖤 Camiseta Atlética de Manga Larga</h3>
+        <p>
+          <strong>Confort y tecnología textil.</strong><br />
+          Ajuste cómodo, frescura sedosa y suavidad amigable con la piel.
+          Ideal para climas frescos o entrenamientos intensos.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="/tienda_deportiva/img/image3.png" />
+        <h3>🏋️‍♂️ Set de Ejercicio Completo</h3>
+        <p>
+          <strong>Versatilidad para cualquier rutina.</strong><br />
+          Incluye camiseta de manga larga, pantalones cortos y largos.
+          Adaptable a todas las fases del entrenamiento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <section class="como-comprar">
+      <h2>¿Cómo hacer un pedido?</h2>
+      <ol>
+        <li>Selecciona tu producto y haz clic en "Ver".</li>
+        <li>Completa el formulario de contacto.</li>
+        <li>Recibe respuesta por correo en menos de 24 horas.</li>
+        <li>Realiza el pago con los métodos indicados.</li>
+        <li>Espera tu pedido en casa. ¡Listo!</li>
+      </ol>
+    </section>
+  </section>
+
+  <aside class="lateral">
+    <img src="/tienda_deportiva/img/Telefono.png" width="50" height="42" />
+    <img src="/tienda_deportiva/img/whatsapp.png" width="50" height="42" />
+    <a href="#formulario">Contacto</a>
+    <div class="verde"></div>
+  </aside>
+
+  <section id="formulario">
+    <h2>Contáctanos</h2>
+    <form action="guardar_contacto.php" method="POST">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required />
+      <label>Correo:</label>
+      <input type="email" name="correo" required />
+      <label>Mensaje:</label>
+      <textarea name="mensaje" rows="4"></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
+<script>
+  alert("gracias por contactarnos");
+</script>
+
+
+  </section>
+
+
+
+  <footer></footer>
+</body>
+
+</html>
