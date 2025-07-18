@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #b7aaff, #d1c4ff);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #333;
+  font-weight: bold;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e181e1;
+  color: white;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#productos {
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.card button {
+  background-color: #b7aaff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #9a8be8;
+}
+
+.lateral {
+  position: fixed;
+  left: 10px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lateral .verde {
+  width: 20px;
+  height: 20px;
+  background-color: limegreen;
+  border-radius: 50%;
+}
+
+#formulario {
+  padding: 20px;
+  background-color: #fff;
+}
+
+#formulario form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+#formulario input,
+#formulario textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #b7aaff;
+  padding: 10px;
+  text-align: right;
+  position: relative;
+}
+
+footer .marca {
+  background-color: #e181e1;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+
+.video-wrapper video {
+  position: relative;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.audio-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(183, 170, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.audio-controls button {
+  background-color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.audio-controls button:hover {
+  background-color: #e181e1;
+  color: white;
+}
+
+.sonido-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #e181e1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: none; /* se mostrará con JS */
+  transition: background-color 0.3s ease;
+}
+
+
+.sonido-btn:hover {
+  background-color: #c06ac0;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide img,
+  .video-wrapper video {
+    height: 250px;
+  }
+
+  .carousel-btn {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+  .sonido-btn,
+  .audio-controls {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+}
+
+h2{
+  text-align: center;
+}
+
+.comparativa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.comparativa th, .comparativa tr {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.beneficios {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.beneficios ul {
+  list-style-type: square;
+  margin-left: 20px;
+  color: #444;
+}
+.beneficios ul, .como-comprar ol {
+  margin-left: 40px;
+  color: #333;
+  font-size: 16px;
+}
+
+.como-comprar {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
